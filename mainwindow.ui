@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>goto hex</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="butGoto">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>146</y>
+      <width>136</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>goto</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inQ_Nr">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>44</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="outHex">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>95</y>
+      <width>680</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>100</number>
+    </property>
+    <property name="placeholderText">
+     <string>F7 00 00 00 00 00 7F</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="butClose">
+    <property name="geometry">
+     <rect>
+      <x>563</x>
+      <y>146</y>
+      <width>136</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>close</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelQ_Nr">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>16</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q-Nr</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelID">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>16</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pult-ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelQ_List">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>16</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q-List</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inID">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>44</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inQ_List">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>44</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="butStop">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>146</y>
+      <width>136</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="butResume">
+    <property name="geometry">
+     <rect>
+      <x>346</x>
+      <y>146</y>
+      <width>136</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resume</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelErklaerung_Copy">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>196</y>
+      <width>691</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Anklicken von [goto], [stop], [resume] kopiert Nachricht in die Zwischenablage.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelQ_Path">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>16</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q-Path</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inQ_Path">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>44</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelErklaerung_Dez">
+    <property name="geometry">
+     <rect>
+      <x>499</x>
+      <y>25</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;- hier Dezimalzahlen benutzen, Q-List und Q-Path sind optional.</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>inQ_Nr</tabstop>
+  <tabstop>butGoto</tabstop>
+  <tabstop>inQ_List</tabstop>
+  <tabstop>butStop</tabstop>
+  <tabstop>butResume</tabstop>
+  <tabstop>inQ_Path</tabstop>
+  <tabstop>inID</tabstop>
+  <tabstop>outHex</tabstop>
+  <tabstop>butClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
