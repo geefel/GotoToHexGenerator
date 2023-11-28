@@ -12,7 +12,6 @@ hexErg[n]:      34 2E 35 00 32 	Wert zum Befehl, hier Cue 2/4.5 	Erklärung sieh
 F7 	Ende der Meldung 	immer F7
 */
 
-#include "platformDev.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QGuiApplication>

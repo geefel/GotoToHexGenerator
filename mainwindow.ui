@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>goto hex</string>
+   <string>goto to hex v1.0</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
