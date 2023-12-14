@@ -39,6 +39,11 @@ MainWindow::MainWindow(QWidget *parent)
                                       font-family: Sans Serif; font-size: 22px;}");
 #endif
 
+#ifdef __APPLE__
+    ui->centralwidget->setStyleSheet("QWidget {color: rgb(255, 255, 255); background-color: #306CC4; \
+                                      font-family: Sans Serif; font-size: 22px;}");
+#endif
+  
     QString QLineEditStyle = "QLineEdit {color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); \
                                       border: 2px solid #8f8f91; border-radius: 6px}";
     ui->inQ_Nr->setStyleSheet(QLineEditStyle);
@@ -162,7 +167,7 @@ void MainWindow::copyButClicked(QString &clip) {
     clipboard->setText(clip, QClipboard::Clipboard);
 #endif
 #ifdef __APPLE__
-    clipboard->setText(clip, QClipboard::FindBuffer);
+    clipboard->setText(clip, QClipboard::Clipboard);
 #endif
 }
 
@@ -178,7 +183,8 @@ void MainWindow::intstringToAscii(QString ergArr[MAX_HEX], int &numErg, QString 
 
 QString MainWindow::stringToHexString(QString in) {
     QString out = "00";
-    int i = in.toInt(NULL);
+    bool ok;
+    int i = in.toInt(&ok);
     if (i > 0x7F) {         //PultID-Error
         setErrorNr(1);
     }
