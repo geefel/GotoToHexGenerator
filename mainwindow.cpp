@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 #ifdef __APPLE__
     ui->centralwidget->setStyleSheet("QWidget {color: rgb(255, 255, 255); background-color: #306CC4; \
-                                      font-family: Sans Serif; font-size: 22px;}");
+                                      font-family: Sans Serif; font-size: 18px;}");
 #endif
   
     QString QLineEditStyle = "QLineEdit {color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); \
